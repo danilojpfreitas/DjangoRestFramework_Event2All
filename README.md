@@ -1,4 +1,4 @@
-# Event2All-DjangoRestFramework
+# DjangoRestFramework_Event2All
 
 ---
 
