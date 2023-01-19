@@ -11,6 +11,7 @@ Faker==16.6.0
 django-filter==22.1
 django-heroku==0.3.1
 gunicorn==20.0.4
+djangorestframework-simplejwt==5.2.2
 
 
 

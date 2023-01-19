@@ -10,8 +10,8 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
+#    authentication_classes = [BasicAuthentication]
+    permission_classes = [IsAuthenticated, ]
 
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
     ordering_fields = ['name']
@@ -23,8 +23,8 @@ class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
 
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
+#    authentication_classes = [BasicAuthentication]
+    permission_classes = [IsAuthenticated, ]
 
 
 class ListEventsByUserId(generics.ListAPIView):
@@ -36,5 +36,5 @@ class ListEventsByUserId(generics.ListAPIView):
 
     serializer_class = ListEventsByUserIdSerializer
 
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
+#    authentication_classes = [BasicAuthentication]
+    permission_classes = [IsAuthenticated, ]
