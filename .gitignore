@@ -1,0 +1,9 @@
+*.sqlite
+*.pyc
+
+# Deploy Files
+.elasticbeanstalk/&
+fly.toml
+eb-virt
+Dockerfile
+Procfile
